@@ -6,9 +6,15 @@ Also, everything here is copyrighted, pls do nut steal
 
 ## Colors
 
-|      Name      |    PANTONE    |       RGB        |   Hex   |         CYMK         |                       Desc                        |
-|----------------|---------------|------------------|---------|----------------------|---------------------------------------------------|
-| Main Yellow    | Yellow 012 C  | R:255 G:215 B:0  | #FFD700 | C:0  Y:2  Y:98  K:0  | The color used to write the "happy" on the logo   |
+|      Name      |       RGB        |   Hex   |         CYMK         |                       Desc                        |
+|----------------|------------------|---------|----------------------|---------------------------------------------------|
+| Red              | R:255 G:0 B:0  | #FF0000 | C:0  Y:100  Y:100  K:0  | <span style="background:#FF0000">&nbsp;&nbsp;&nbsp;&nbsp;</span>   |
+| Yellow           | R:255 G:255 B:0  | #FFFF00 | C:0  Y:0  Y:100  K:0  | <span style="background:#FFFF00">&nbsp;&nbsp;&nbsp;&nbsp;</span>   |
+| Green            | R:0 G:255 B:0  | #00FF00 | C:100  Y:0  Y:100  K:0  | <span style="background:#00FF00">&nbsp;&nbsp;&nbsp;&nbsp;</span>   |
+| Cyan             | R:0 G:255 B:255  | #00FFFF | C:100  Y:0  Y:00  K:0  | <span style="background:#00FFFF">&nbsp;&nbsp;&nbsp;&nbsp;</span>   |
+| Blue             | R:0 G:0 B:255  | #0000FF | C:100  Y:100  Y:0  K:0  | <span style="background:#0000FF">&nbsp;&nbsp;&nbsp;&nbsp;</span>   |
+| Purple           | R:148 G:0 B:211  | #9400D3 | C:30  Y:100  Y:0  K:17  | <span style="background:#9400D3">&nbsp;&nbsp;&nbsp;&nbsp;</span>   |
+| Text color       | R:0 G:0 B:0  | #000000 | C:0  Y:0  Y:0  K:0  | <span style="background:#000000">&nbsp;&nbsp;&nbsp;&nbsp;</span>   |
 
 __License :__
 https://creativecommons.org/licenses/by-nc-sa/3.0/
