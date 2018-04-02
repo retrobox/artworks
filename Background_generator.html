@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8" />
+	<style>
+		body {
+			font-family: sans-serif;
+			color: #111;
+			background: #eee;
+		}
+
+		h1 {
+			text-align: center;
+		}
+
+		div {
+			width: 600px;
+			margin: auto;
+		}
+
+		hr {
+			width: 650px;
+			margin-left: -25px;
+		}
+
+		canvas {
+			display: block;
+			margin: auto;
+		}
+	</style>
+</head>
+
+<body>
+	<h1>
+		Générateur de fond avec des triangles super cool v.2.69.42.1337
+	</h1>
+
+	<div>
+		<hr> Hauteur des triangles (px): <input value="40" type="number" id="triangleHeight" /><br> Largeur des triangles (px): <input value="40" type="number" id="triangleWidth" /><br>
+		<hr> Nombres de triangles en largeur: <input value="20" type="number" id="canvasHeight" /><br> Nombres de triangles en longueur: <input value="20" type="number" id="canvasWidth" /><br>
+		<hr> Luminosité (0-255): <input value="32" type="number" id="brightness" /><br> Différence de couleurs (0-255): <input value="8" type="number" id="colorDifference" /><br>
+		<hr>
+		<input type="checkbox" id="transparence" /> Transparent<br> Transparence min (0-100): <input value="10" type="number" id="minTransparence" /><br> Difference de la Transparence (0-100): <input value="25" type="number" id="transparenceDifference" /><br>
+		<hr>
+		<input type="button" id="start" value="STAAAAART" />
+		<a style="display:none;" id="download" download="background.png">Télécharger l'image en .png</a>
+		<hr>
+	</div>
+	<canvas id="canvas" height="800px" width="800px"></canvas>
+
+	<script>
+		function generate() {
+			var triangleHeight = parseInt(document.getElementById("triangleHeight").value, 10);
+			var triangleWidth = parseInt(document.getElementById("triangleWidth").value, 10);
+			var brightness = parseInt(document.getElementById("brightness").value, 10);
+			var colorDifference = parseInt(document.getElementById("colorDifference").value, 10);
+			var transparenceMin = parseInt(document.getElementById("minTransparence").value, 10) / 100;
+			var transparenceDifference = parseInt(document.getElementById("transparenceDifference").value, 10) / 100;
+
+			var canvas = document.getElementById("canvas");
+			var ctx = canvas.getContext("2d");
+			var transparence;
+
+			canvas.height = document.getElementById("canvasHeight").value * triangleHeight;
+			canvas.width = document.getElementById("canvasWidth").value * triangleWidth;
+
+			if (!document.getElementById("transparence").checked) {
+				var averageColor = Math.round(brightness + colorDifference / 2).toString(16);
+				ctx.fillStyle = "#" + averageColor + averageColor + averageColor;
+				ctx.fillRect(0, 0, canvas.width, canvas.height);
+			}
+
+			var triangleShade;
+
+			for (var x = 0; x < (canvas.width / triangleWidth); x++) {
+				var firstTriangleShade = Math.min((brightness + Math.floor(Math.random() * colorDifference)), 255);
+				var firstTransparence = Math.min(transparenceMin + (Math.random() * transparenceDifference), 1);
+				for (var y = -0.5; y < (canvas.height / triangleHeight); y += 0.5) {
+					triangleShade = Math.min((brightness + Math.floor(Math.random() * colorDifference)), 255);
+					transparence = Math.min(transparenceMin + (Math.random() * transparenceDifference), 1);
+
+					if (y < 0 || y === (canvas.height / triangleHeight) - 0.5) {
+						triangleShade = firstTriangleShade;
+						transparence = firstTransparence;
+					}
+
+					if (!document.getElementById("transparence").checked) {
+						transparence = 1;
+					}
+
+					ctx.fillStyle = "rgba(" + triangleShade + "," + triangleShade + "," + triangleShade + "," + transparence + ")";
+
+					ctx.beginPath();
+					if (!(y % 1) != !(x % 2)) {
+						ctx.moveTo(x * triangleWidth, y * triangleHeight);
+						ctx.lineTo((x + 1) * triangleWidth, (y + 0.5) * triangleHeight);
+						ctx.lineTo(x * triangleWidth, (y + 1) * triangleHeight);
+					} else {
+						ctx.moveTo((x + 1) * triangleWidth, y * triangleHeight);
+						ctx.lineTo(x * triangleWidth, (y + 0.5) * triangleHeight);
+						ctx.lineTo((x + 1) * triangleWidth, (y + 1) * triangleHeight);
+					}
+					ctx.fill();
+					if (!document.getElementById("transparence").checked) {
+						ctx.strokeStyle = ctx.fillStyle;
+						ctx.stroke();
+					}
+				}
+			}
+
+			document.getElementById("download").href = canvas.toDataURL("image/png");
+			document.getElementById("download").style.display = "inline";
+		}
+
+
+		document.getElementById("start").onclick = generate
+	</script>
+
+</body>
+
+</html>
