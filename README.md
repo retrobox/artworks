@@ -4,7 +4,7 @@ Everything related to the RetroBox branding is here
 
 Also, everything here is copyrighted, pls do nut steal
 
-## Colors
+## Logo Colors
 
 |      Name      |       RGB        |   Hex   |         CYMK         |                       Desc                        |
 |----------------|------------------|---------|----------------------|---------------------------------------------------|
@@ -15,6 +15,42 @@ Also, everything here is copyrighted, pls do nut steal
 | Blue             | R:0 G:0 B:255  | #0000FF | C:100  Y:100  M:0  K:0  | ![#0000ff](https://placehold.it/15/0000ff/000000?text=+)   |
 | Purple           | R:148 G:0 B:211  | #9400D3 | C:30  Y:100  M:0  K:17  | ![#9400D3](https://placehold.it/15/9400D3/000000?text=+)   |
 | Text color       | R:0 G:0 B:0  | #000000 | C:0  Y:0  M:0  K:0  | ![#000000](https://placehold.it/15/0000000/000000?text=+)   |
+
+
+## Gradients
+
+HTML/CSS : linear-gradient(90deg,#93278f,#00a99d 95%)
+
+|      Name      |       RGB        |   Hex   |         CYMK         |                       Desc                        |
+|----------------|------------------|---------|----------------------|---------------------------------------------------|
+| Purple             | R:147 G:39 B:143  | #93278f | C:0  Y:100  M:100  K:0  | ![#93278f](https://placehold.it/15/ff0000/000000?text=+)   |
+| Turquoise          | R:169 G:0 B:157  | #00a99d | C:0  Y:0  M:100  K:0  | ![#00a99d](https://placehold.it/15/fff00/000000?text=+)   |
+
+## Global Colors
+
+|      Name      |       RGB        |   Hex   |         CYMK         |                       Desc                        |
+|----------------|------------------|---------|----------------------|---------------------------------------------------|
+| Light Red              | R:255 G:76 B:76  | #ff4c4c | C:0  Y:0  M:100  K:0  | ![#ff4c4c](https://placehold.it/15/fff00/000000?text=+)   |
+| Light Yellow           | R:255 G:255 B:76  | #ffff4c| C:0  Y:0  M:100  K:0  | ![#ffff4c](https://placehold.it/15/fff00/000000?text=+)   |
+| Light Green            | R:77 G:255 B:76  | #4dff4c | C:100  Y:0  M:100  K:0  | ![#4dff4c](https://placehold.it/15/00ff00/000000?text=+)   |
+| Light Cyan             | R:76 G:255 B:255  | #4cffff | C:100  Y:0  M:00  K:0  | ![#4cffff](https://placehold.it/15/00ffff/000000?text=+)   |
+| Light Blue             | R:77 G:76 B:255  | #4d4cff | C:100  Y:100  M:0  K:0  | ![#4d4cff](https://placehold.it/15/0000ff/000000?text=+)   |
+| Light Purple           | R:255 G:76 B:255  | #9400D3 | C:30  Y:100  M:0  K:17  | ![#ff4cff](https://placehold.it/15/9400D3/000000?text=+)   |
+| Text Color Light-Grey  | R:236 G:240 B:241  | #ecf0f1 | C:0  Y:100  M:100  K:0  | ![#ecf0f1](https://placehold.it/15/ff0000/000000?text=+)   |
+| Background  | R:30 G:36 B:38  | #1e2426 | C:0  Y:100  M:100  K:0  | ![#1e2426](https://placehold.it/15/ff0000/000000?text=+)   |
+
+## Fonts
+
+Title Font : <a href="https://fonts.google.com/specimen/Montserrat">Montserrat, Author : Julieta Ulanovsky on Google Font</a>
+Website Font : <a href="https://fonts.google.com/specimen/Roboto">Roboto, Author : Christian Robertson on Google Font</a>
+Logo Font : <a href="https://www.dafont.com/04b-30.font">04b-30, Author : Yuji Oshimoto on Dafont</a>
+
+## Main design
+
+Retrobox use a flat design in contrary to the logo's colors but all time with a lot of colors.
+In our team, we love dark theme and we want a better world with a lot of dark colors.
+Except all our documentation, our conditions of use, our shop and all that requires a little serious because that's the norm.
+Retrobox use as well rounded square and we use some "clip-path" to avoid repetition.
 
 __License :__
 
@@ -28,6 +64,4 @@ RetroBox & StoneSet & Wabfall & Lefuturiste & Pizzacus
 
 Site officiel : https://retrobox.tech
 Official website : https://retrobox.tech
-Made with ❤️ in France 
-
-
+Made with ❤️ in France
