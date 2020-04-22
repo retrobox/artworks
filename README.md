@@ -41,8 +41,8 @@ HTML/CSS : linear-gradient(90deg,#93278f,#00a99d 95%)
 
 ## Fonts
 
-Title Font : <a href="https://fonts.google.com/specimen/Montserrat">Montserrat, Author : Julieta Ulanovsky on Google Font</a>
-Website Font : <a href="https://fonts.google.com/specimen/Roboto">Roboto, Author : Christian Robertson on Google Font</a>
+Title Font : <a href="https://fonts.google.com/specimen/Montserrat">Montserrat, Author : Julieta Ulanovsky on Google Font</a>  
+Website Font : <a href="https://fonts.google.com/specimen/Roboto">Roboto, Author : Christian Robertson on Google Font</a>  
 Logo Font : <a href="https://www.dafont.com/04b-30.font">04b-30, Author : Yuji Oshimoto on Dafont</a>
 
 ## Main design
@@ -55,13 +55,3 @@ Retrobox use as well rounded square and we use some "clip-path" to avoid repetit
 __License :__
 
 <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-sa/3.0/88x31.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/">Creative Commons Attribution-NonCommercial-ShareAlike 3.0 Unported License</a>.
-
-__Copyright :__
-
-RetroBox & StoneSet & Wabfall & Lefuturiste & Pizzacus
-
-~ - ~
-
-Site officiel : https://retrobox.tech
-Official website : https://retrobox.tech
-Made with ❤️ in France
